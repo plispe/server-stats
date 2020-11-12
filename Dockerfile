@@ -24,7 +24,6 @@ RUN apk add --update --no-cache nodejs npm && chmod +x /usr/local/bin/docker-ent
 COPY --from=cert-generator /certs/localhost.key /etc/nginx/ssl
 COPY --from=cert-generator /certs/localhost.crt /etc/nginx/ssl
 COPY default.conf /etc/nginx/conf.d
-# COPY public /usr/share/nginx/html
 
 WORKDIR /app
 
