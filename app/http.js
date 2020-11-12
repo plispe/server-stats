@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 app.use(express.static(path.join(__dirname, '/public')))
 
-const {HTTP_SERVER_PORT: port = 3000} = process.env
+const {HTTP_SERVER_PORT: port = 3001} = process.env
 app.get('/api', (req, res) => {
     res.send('API call')
 })

@@ -6,7 +6,7 @@ const WebSocket = require('ws')
 
 const server = createServer()
 const wss = new WebSocket.Server({ server })
-const {SOCKET_SERVER_PORT: port = 3001} = process.env
+const {SOCKET_SERVER_PORT: port = 3002} = process.env
 
 wss.on('connection', (ws) => {
   const id = setInterval(() => {
